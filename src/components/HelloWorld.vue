@@ -1,6 +1,6 @@
 <template>
   <div class="newpos">
-    <BarSample :newtitle="message" :lefttext="ltext" :leftarrow="lrrow" />
+    <BarSample :newTitle="message" :leftText="ltext" :leftArrow="lrrow" />
     <CenterPage  />
   </div>
 </template>

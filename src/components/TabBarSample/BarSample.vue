@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
-    <van-nav-bar :title="title" :left-text="lefttexts" :left-arrow='arrow'
-        @click-left="onClickLeft"
-        @click-right="onClickRight"
+    <van-nav-bar 
+    :title="title" 
+    :left-text="lefttexts" 
+    :left-arrow='arrow'
+    @click-left="onClickLeft"
+    @click-right="onClickRight"
     >
       <template #right>
         <van-icon name="search"/>
@@ -20,7 +23,7 @@ Vue.use(NavBar).use(Icon)
 export default {
   name: 'BarSample',
   props: {
-    newtitle: {
+    newTitle: {
       type: String,
       default: 'hello world'
     },
@@ -28,11 +31,11 @@ export default {
         type:String,
         default:''
     },
-    lefttext: {
+    leftText: {
         type:String,
         default:'返回'
     },
-    leftarrow: {
+    leftArrow: {
         type: Boolean,
         default:true
     }
@@ -42,7 +45,7 @@ export default {
           title: this.newtitle,
           //pagenames: this.pagename
           lefttexts: this.lefttext,
-          arrow:this.leftarrow
+          arrow:this.leftArrow
       }
   },
   methods: {
@@ -55,7 +58,7 @@ export default {
   },
 }
 </script>
-<style scoped>
+<style>
     .hello {
         border: auto;
     }
@@ -70,7 +73,11 @@ export default {
     .van-nav-bar__text {
         color: white
     }
+
     .van-icon {
-        color:white
+      color: white
+    }
+    .van-nav-bar .van-icon {
+      color:white
     }
 </style>

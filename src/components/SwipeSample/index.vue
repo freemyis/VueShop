@@ -30,9 +30,9 @@
 
 <script>
     import Vue from 'vue';
-    import { Swipe, SwipeItem, Lazyload, Card, Tag, Button } from 'vant';
+    import { Swipe, SwipeItem, Lazyload, Card, Tag, Button, Sku } from 'vant';
 
-    Vue.use(Swipe).use(SwipeItem).use(Lazyload).use(Card).use(Tag).use(Button)
+    Vue.use(Swipe).use(SwipeItem).use(Lazyload).use(Card).use(Tag).use(Button).use(Sku)
 
     export default {
         name:'SwipeSample',

@@ -1,6 +1,6 @@
 <template>
     <div>
-      <BarSample :newtitle="message" :pagename='newName' :lefttext="ltext" :leftarrow="lrrow"/>
+      <BarSample :newTitle="message" :pagename='newName' :leftText="ltext" :leftArrow="lrrow"/>
       <SwipeSample />
     </div>
 </template>
