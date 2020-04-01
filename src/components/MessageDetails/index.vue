@@ -1,12 +1,25 @@
 <template>
     <div>
-        <p>The shop message details and remark the shop into market.</p>
+        <BarSample :newTitle="message" :pagename='newName' :leftText="ltext" :leftArrow="lrrow"/>
     </div>
 </template>
 
 <script>
+    import BarSample from '@/components/TabBarSample/BarSample'
+
     export default {
-        name:'MessageDetails'
+        name:'MessageDetails',
+        components: {
+            BarSample,
+        },
+        data() {
+            return {
+                message: "商品详情页面",
+                newName:'Persontr',
+                ltext:'返回',
+                lrrow: true
+            }
+        },
     }
 </script>
 

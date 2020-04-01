@@ -22,6 +22,6 @@ export default new Router({
       path:'/MessageDetails',
       name:'MessageDetails',
       component: MessageDetails
-    }
+    },
   ]
 })

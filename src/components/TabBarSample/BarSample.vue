@@ -42,9 +42,9 @@ export default {
   },
   data() {
       return {
-          title: this.newtitle,
+          title: this.newTitle,
           //pagenames: this.pagename
-          lefttexts: this.lefttext,
+          lefttexts: this.leftText,
           arrow:this.leftArrow
       }
   },
