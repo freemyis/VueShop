@@ -56,12 +56,13 @@
         methods: {
             onSubmit(values) {
                 //console.log('submit', values);
-                if (this.username === this.defaultname && this.password === this.defaultpass) {
+                // if (this.username === this.defaultname && this.password === this.defaultpass) {
                     
-                    this.$router.push({name: 'Persontr', params: {data: values}})   
-                } else {
-                    Toast("请检查账号密码，重新输入...");
-                }
+                //     this.$router.push({path: '/Persontr', query: {data: values}})   
+                // } else {
+                //     Toast("请检查账号密码，重新输入...");
+                // }
+                this.$router.push({path: '/Persontr', query: {data: values}})   
                                           
             },
 

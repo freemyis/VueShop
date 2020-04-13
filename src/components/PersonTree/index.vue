@@ -26,14 +26,14 @@ export default {
         password:''
       },
       message:'登录成功页面',
-      newName:'HelloWorld',
+      newName:'/',
       ltext:"返回",
       lrrow:true
     }
   },
   mounted () {
-    console.log(this.$route.params.data);
-    this.user = this.$route.params.data;
+    console.log(this.$route.query.data);
+    this.user = this.$route.query.data;
   },
 }
 // console.log(this.$route.params.data);

@@ -15,7 +15,7 @@
         data() {
             return {
                 message: "商品详情页面",
-                newName:'Persontr',
+                newName:'/Persontr',
                 ltext:'返回',
                 lrrow: true
             }

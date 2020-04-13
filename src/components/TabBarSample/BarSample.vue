@@ -50,7 +50,7 @@ export default {
   },
   methods: {
     onClickLeft() {
-      this.$router.push({name: this.pagename})     
+      this.$router.push({path: this.pagename})     
     },
     onClickRight() {
       alert("success")

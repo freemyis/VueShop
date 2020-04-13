@@ -58,7 +58,7 @@
         },
         methods: {
             shopDetail() {
-                // this.$router.push("MessageDetails")
+                 this.$router.push("/MessageDetails")
             },
             addShopCar() {
 
