@@ -21,7 +21,7 @@
                 <van-tag plain type="danger">双十一特购</van-tag>
             </template>
             <template #footer>
-                <van-button size="mini">加入购物车</van-button>
+                <van-button size="mini" @click="addShopCar">加入购物车</van-button>
                 <van-button size="mini">购买</van-button>
             </template>
         </van-card>
@@ -40,9 +40,17 @@
             return {
                 images: [
                     'https://img.yzcdn.cn/vant/apple-1.jpg',
+                    'https://img.yzcdn.cn/vant/apple-2.jpg',
+                    'https://img.yzcdn.cn/vant/apple-1.jpg',
+                    'https://img.yzcdn.cn/vant/apple-2.jpg',
+                    'https://img.yzcdn.cn/vant/apple-1.jpg',
                     'https://img.yzcdn.cn/vant/apple-2.jpg'
                 ],
                 shopImage: [
+                    'https://img.yzcdn.cn/vant/ipad.jpeg',
+                    'https://img.yzcdn.cn/vant/ipad.jpeg',
+                    'https://img.yzcdn.cn/vant/ipad.jpeg',
+                    'https://img.yzcdn.cn/vant/ipad.jpeg',
                     'https://img.yzcdn.cn/vant/ipad.jpeg',
                     'https://img.yzcdn.cn/vant/ipad.jpeg'
                 ]
@@ -50,7 +58,10 @@
         },
         methods: {
             shopDetail() {
-                this.$router.push("MessageDetails")
+                // this.$router.push("MessageDetails")
+            },
+            addShopCar() {
+
             }
         },
     }

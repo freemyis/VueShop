@@ -1,19 +1,23 @@
 <template>
     <div>
       <BarSample :newTitle="message" :pagename='newName' :leftText="ltext" :leftArrow="lrrow"/>
-      <SwipeSample />
+      <!-- <SwipeSample /> -->
+      <router-view></router-view>
+      <BottomBar />
     </div>
 </template>
 
 <script>
 import BarSample from '@/components/TabBarSample/BarSample'
 import SwipeSample from '@/components/SwipeSample'
+import BottomBar from '@/components/BottomBar'
 
 export default {
   name: 'Persontr',
   components: {
     BarSample,
     SwipeSample,
+    BottomBar,
   },
   data() {
     return {

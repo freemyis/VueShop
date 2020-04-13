@@ -4,11 +4,13 @@
             <van-field
                 id="newfied"
                 v-model="username"
+                :value='username'
                 name="username"
                 label="用户名"
                 :rules="[{ required: true, message: '请填写用户名' }]"
             />
             <van-field
+                :value='password'
                 v-model="password"
                 type="password"
                 name="password"
@@ -23,6 +25,7 @@
                 @blur="show = false"
                 @input="onInput"
                 @delete="onDelete"
+                v-model="password"
             />
             <div style="margin: 16px;">
                 <van-button round block type="info" native-type="submit">
@@ -45,20 +48,28 @@
             return {
                 username: '',
                 password: '',
-                show: false
+                show: false,
+                defaultname: 'crishari',
+                defaultpass: '123456'
             };
         },
         methods: {
             onSubmit(values) {
                 //console.log('submit', values);
-                this.$router.push({name: 'Persontr', params: {data: values}})                             
+                if (this.username === this.defaultname && this.password === this.defaultpass) {
+                    
+                    this.$router.push({name: 'Persontr', params: {data: values}})   
+                } else {
+                    Toast("请检查账号密码，重新输入...");
+                }
+                                          
             },
 
             onInput(value) {
-                Toast(value);
+                this.password = value;
             },
             onDelete() {
-                Toast('删除');
+                // Toast('删除');
             }
 
         },
@@ -78,5 +89,8 @@
         font-size: 16px;
         font-weight: bolder;
         cursor: pointer;
+    }
+    input.van-field__control {
+        /* color: ghostwhite !important; */
     }
 </style>
