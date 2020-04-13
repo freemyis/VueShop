@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
   .newpos {
-    background-image: url("https://tse4-mm.cn.bing.net/th/id/OIP.4GJ7Mx1lmDgEytE_WTEeYQAAAA?w=126&h=212&c=7&o=5&pid=1.7");
+    background-image: url("https://sjbz-fd.zol-img.com.cn/t_s208x312c5/g2/M00/01/0C/ChMlWV6BZxqIOzMlAAhSjpEmi5EAAN8VALttjwACFKm996.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 45em;

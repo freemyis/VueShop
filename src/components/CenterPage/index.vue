@@ -6,7 +6,6 @@
                 v-model="username"
                 name="username"
                 label="用户名"
-                placeholder="用户名"
                 :rules="[{ required: true, message: '请填写用户名' }]"
             />
             <van-field
@@ -14,7 +13,6 @@
                 type="password"
                 name="password"
                 label="密码"
-                placeholder="密码"
                 :rules="[{ required: true, message: '请填写密码' }]"
                 @touchstart.stop="show = true"
             />
@@ -70,5 +68,15 @@
 <style scoped>
     form {
         margin-top: 12em;
+        /* background-color: rgb(255,250,250, 0.75); */
+        color: #ff6034;
+        caret-color:red;
+    }
+    .van-cell {
+        background-color: rgb(255,250,250, 0.35);
+        color: #ff6034;
+        font-size: 16px;
+        font-weight: bolder;
+        cursor: pointer;
     }
 </style>
