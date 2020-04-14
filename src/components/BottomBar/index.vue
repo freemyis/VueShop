@@ -11,6 +11,7 @@
             to='/Persontr/ShopMessage'
             icon="search" 
             name='shop'
+            :badge="shopNumber"
             >Shop</van-tabbar-item>
             <van-tabbar-item 
             to='/Persontr/ShopListItem'
@@ -37,7 +38,8 @@
         name: 'BottomBar',
         data() {
             return {
-                active: 'home'
+                active: 'home',
+                shopNumber: '5'
             }
         },
         methods: {

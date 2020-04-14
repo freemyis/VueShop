@@ -63,8 +63,7 @@
             },
             addShopCar() {
                 let data = this.countNum++;
-                this.$emit('showNum', this.data)
-                console.log(data)
+                this.$emit('showNum', data)
             }
         },
     }
