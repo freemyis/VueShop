@@ -2,7 +2,7 @@
     <div class="movePic">
         <van-swipe :autoplay="3000">
             <van-swipe-item v-for="(image, index) in images" :key="index">
-                <img v-lazy="image" style="width:100%;height:100%" />
+                <img v-lazy="image" />
             </van-swipe-item>
         </van-swipe>
 
@@ -25,11 +25,13 @@
                 <van-button size="mini">购买</van-button>
             </template>
         </van-card>
+        <div class='bottomlop'></div>
     </div>
 </template>
 
 <script>
     import Vue from 'vue';
+    import $ from 'jquery'
     import { Swipe, SwipeItem, Lazyload, Card, Tag, Button } from 'vant';
 
     Vue.use(Swipe).use(SwipeItem).use(Lazyload).use(Card).use(Tag).use(Button)
@@ -70,8 +72,17 @@
 </script>
 
 <style scoped>
+    img {
+        width: 100%;
+        height: 18em;
+        margin-top: 4em;
+    }
     .movePic {
         width: 100%;
         height: 3em;
+    }
+    .bottomlop {
+        height : 50px;
+        display :block;
     }
 </style>
