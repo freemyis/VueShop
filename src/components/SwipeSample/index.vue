@@ -53,15 +53,18 @@
                     'https://img.yzcdn.cn/vant/ipad.jpeg',
                     'https://img.yzcdn.cn/vant/ipad.jpeg',
                     'https://img.yzcdn.cn/vant/ipad.jpeg'
-                ]
+                ],
+                countNum: 1
             }
         },
         methods: {
             shopDetail() {
-                 this.$router.push("/MessageDetails")
+                //  this.$rout  er.push("/MessageDetails")
             },
             addShopCar() {
-
+                let data = this.countNum++;
+                this.$emit('showNum', this.data)
+                console.log(data)
             }
         },
     }

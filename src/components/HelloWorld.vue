@@ -1,5 +1,6 @@
 <template>
   <div class="newpos">
+    <div class="stars"></div>
     <BarSample :newTitle="message" :leftText="ltext" :leftArrow="lrrow" />
     <CenterPage  />
   </div>
