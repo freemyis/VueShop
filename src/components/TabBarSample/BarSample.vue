@@ -63,7 +63,11 @@ export default {
         border: auto;
     }
     .van-nav-bar {
-            background-color: dimgray;
+      background-color: dimgray;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
     }
     .van-nav-bar__title {
         color: whitesmoke;

@@ -31,6 +31,11 @@ export default {
       lrrow:true
     }
   },
+  methods: {
+    clickCount(data) {
+      console.log(data);
+    }
+  },
   mounted () {
     console.log(this.$route.query.data);
     this.user = this.$route.query.data;

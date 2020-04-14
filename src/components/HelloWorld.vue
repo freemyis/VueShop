@@ -25,11 +25,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   .newpos {
     background-image: url("https://sjbz-fd.zol-img.com.cn/t_s208x312c5/g2/M00/01/0C/ChMlWV6BZxqIOzMlAAhSjpEmi5EAAN8VALttjwACFKm996.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 45em;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
   }
 </style>

@@ -81,12 +81,12 @@
     form {
         margin-top: 12em;
         /* background-color: rgb(255,250,250, 0.75); */
-        color: #ff6034;
-        caret-color:red;
+        /* color: #efefef; */
+        caret-color:black;
     }
     .van-cell {
-        background-color: rgb(255,250,250, 0.35);
-        color: #ff6034;
+        background-color: rgb(255,250,250, 0.55);
+        color: #efefef;
         font-size: 16px;
         font-weight: bolder;
         cursor: pointer;
