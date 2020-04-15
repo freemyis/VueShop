@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="topNull"></div>
         <h1>{{message}}</h1>
     </div>
 </template>
@@ -42,5 +43,8 @@ console.log(store.state.count);
 <style scoped>
     h1 {
         margin-top: 6em;
+    }
+    .topNull {
+        height: 46px;
     }
 </style>

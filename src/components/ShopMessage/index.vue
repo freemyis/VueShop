@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class='topNull'></div>
         <p>basic page in Shop.</p>
     </div>
 </template>
@@ -11,5 +12,7 @@
 </script>
 
 <style scoped>
-
+    .topNull {
+        height: 46px;
+    }
 </style>
