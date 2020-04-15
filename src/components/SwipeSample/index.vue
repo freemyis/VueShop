@@ -32,6 +32,8 @@
 <script>
     import Vue from 'vue';
     import $ from 'jquery'
+    import {mapMutations, mapActions} from 'vuex'
+    // import CenterNull from '../CenterNull'
     import { Swipe, SwipeItem, Lazyload, Card, Tag, Button } from 'vant';
 
     Vue.use(Swipe).use(SwipeItem).use(Lazyload).use(Card).use(Tag).use(Button)
@@ -63,10 +65,26 @@
             shopDetail() {
                 //  this.$rout  er.push("/MessageDetails")
             },
-            addShopCar() {
-                let data = this.countNum++;
-                this.$emit('showNum', data)
-            }
+            // addShopCar() {
+            //     let data = this.countNum++;
+            //     // CenterNull.$emit('showNum', data)
+            //     /***** */
+            //     //正常的使用commit调用crement
+            //     // this.$store.commit('crement');
+            // }
+            /*************** */
+            //使用...mapMutations
+            // ...mapMutations({
+            //     addShopCar: 'crement'
+            // })
+            /********************* */
+            //使用...mapActions
+            // addShopCar() {
+            //     this.$store.dispatch('incrementAsync')
+            // }
+            ...mapActions({
+                addShopCar: 'increments'
+            })
         },
     }
 </script>
