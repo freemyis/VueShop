@@ -82,7 +82,7 @@
             // addShopCar() {
             //     this.$store.dispatch('incrementAsync')
             // }
-            ...mapActions({
+            ...mapActions('foods',{
                 addShopCar: 'increments'
             })
         },

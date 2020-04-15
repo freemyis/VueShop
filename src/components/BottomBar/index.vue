@@ -81,13 +81,14 @@
             //     return this.$store.getters.todosNum;
             // },
             /******************** */
-            ...mapState({
+            ...mapState('foods',{
                 shopNumber: state => state.count === 0 ? '' : state.count,
                 
             }),
-            ...mapGetters({
+            
+            ...mapGetters('foods',{
                 listNumber: 'todosNum'
-            })
+            }),
         },
 
     }
