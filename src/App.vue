@@ -8,6 +8,14 @@
 <script>
 import $ from 'jquery'
 
+$(window).scroll(() => {
+  if ($(window).scrollTop() > 100) {
+    $('.top').fadeIn(300);
+  } else {
+    $('.top').fadeOut(300);
+  }
+})
+
 export default {
   name: 'App',
   methods: {
@@ -39,5 +47,6 @@ export default {
   color:white;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
+  display: none;
 }
 </style>
