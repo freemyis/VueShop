@@ -94,4 +94,8 @@
     input.van-field__control {
         /* color: ghostwhite !important; */
     }
+    .van-button--info {
+        background-color: #ad83d1;
+        border: 1px solid #ad83d1;
+    }
 </style>

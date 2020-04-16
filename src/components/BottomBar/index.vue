@@ -96,12 +96,12 @@
 
 <style scoped>
     .van-tabbar {
-        background-color: currentColor;
+        background-color: #7c56a0;
     }
     .van-tabbar-item {
         color: azure !important;
     }
     .van-tabbar-item--active {
-        color: #1989fa !important;
+        color: #ff9af1 !important;
     }
 </style>
