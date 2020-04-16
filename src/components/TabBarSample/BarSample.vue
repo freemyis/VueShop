@@ -63,25 +63,28 @@ export default {
         border: auto;
     }
     .van-nav-bar {
-      background-color: dimgray;
+      background-color: #ffb39e;
       position: fixed;
       top: 0;
       right: 0;
       left: 0;
     }
     .van-nav-bar__title {
-        color: whitesmoke;
-        font-weight: 500;
+        color: white;
+        font-weight: bolder;
         font-size: 16px;
     }
     .van-nav-bar__text {
-        color: white
+        color: white;
+        font-weight: bolder;
     }
 
     .van-icon {
-      color: white
+      color: white;
+      font-weight: bolder;
     }
     .van-nav-bar .van-icon {
-      color:white
+      color:black;
+      font-weight: bolder; 
     }
 </style>

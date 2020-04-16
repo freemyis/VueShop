@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BarSample from '@/components/TabBarSample/BarSample'
+import BarSample from '@/components/TabBarSample/BarSample' 
 import SwipeSample from '@/components/SwipeSample'
 import BottomBar from '@/components/BottomBar'
 
