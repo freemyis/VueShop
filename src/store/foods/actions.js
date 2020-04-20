@@ -1,5 +1,5 @@
 export default {
-    increments({commit}) {
+    increments({ commit }) {
         commit("crement")
-    }
+    },
 }
