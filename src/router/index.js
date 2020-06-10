@@ -42,6 +42,7 @@ export default new Router({
           path: 'PersonCenter',
           name: 'PersonCenter',
           component: PersonCenter,
+          redirect: '/PersonalStore/1',
           children: [
             {
               path: '/PersonalStore/:id',
