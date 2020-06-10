@@ -6,6 +6,9 @@ import router from './router'
 import 'vant/lib/index.css'
 // import Vuex from 'vuex'
 import store from './store/index'
+import Echarts from 'vue-echarts'
+
+Vue.component('v-chart', Echarts)
 
 // Vue.use(Vuex)
 

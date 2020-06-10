@@ -7,8 +7,8 @@
     </van-swipe>
 
     <van-card
-      num="2"
-      price="2.00"
+      num="1"
+      price="2000"
       desc="描述信息"
       title="商品标题"
       v-for="(phoneImage, index) in images"
@@ -25,7 +25,6 @@
         <van-button size="mini">购买</van-button>
       </template>
     </van-card>
-    <div class="bottomlop"></div>
   </div>
 </template>
 
@@ -68,9 +67,9 @@ export default {
   },
   methods: {
     shopDetail(index) {
-      //  this.$router.push("/MessageDetails")
-      //   console.log(this.$store.state.foods.count);
-      //   console.log(this.$store.getters["foods/getTodoByid"](index));
+      this.$router.push("/MessageDetails");
+      console.log(this.$store.state.foods.count);
+      console.log(this.$store.getters["foods/getTodoByid"](index));
     },
     // addShopCar() {
     //     let data = this.countNum++;
@@ -100,6 +99,9 @@ export default {
 </script>
 
 <style scoped>
+van-card {
+}
+
 img {
   width: 100%;
   height: 18em;
@@ -107,10 +109,6 @@ img {
 }
 .movePic {
   width: 100%;
-  height: 3em;
-}
-.bottomlop {
-  height: 50px;
-  display: block;
+  /* height: 100vh; */
 }
 </style>
