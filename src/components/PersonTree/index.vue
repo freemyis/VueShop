@@ -4,6 +4,7 @@
     <!-- <SwipeSample /> -->
     <main>
       <router-view></router-view>
+      {{leaveName}}
     </main>
     <BottomBar />
   </div>
@@ -21,6 +22,16 @@ export default {
     SwipeSample,
     BottomBar
   },
+  beforeRouteEnter(to, from, next) {
+    console.log(to, from, "beforeRouteEnter.");
+    next(vm => {
+      vm.leaveName = to.name + " Bottom";
+    });
+  },
+  beforeRouteLeave(to, from, next) {
+    console.log("from", from, "to", to, "success");
+    next();
+  },
   data() {
     return {
       user: {
@@ -30,7 +41,8 @@ export default {
       message: "登录成功页面",
       newName: "/",
       ltext: "返回",
-      lrrow: true
+      lrrow: true,
+      leaveName: ""
     };
   },
   methods: {
@@ -47,4 +59,7 @@ export default {
 </script>
 
 <style scoped>
+main {
+  margin-bottom: 50px;
+}
 </style>

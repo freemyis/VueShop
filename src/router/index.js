@@ -7,6 +7,7 @@ import SwipeSample from '@/components/SwipeSample'
 import ShopMessage from '@/components/ShopMessage'
 import ShopListItem from '@/components/ShopListItem'
 import PersonCenter from '@/components/PersonCenter'
+import PersonalStore from '@/components/PersonCenter/PersonalStore'
 
 Vue.use(Router)
 
@@ -21,7 +22,7 @@ export default new Router({
       path: '/Persontr',
       name: 'Persontr',
       component: Persontr,
-      children : [
+      children: [
         {
           path: '/',
           name: 'SwipeSample',
@@ -40,13 +41,20 @@ export default new Router({
         {
           path: 'PersonCenter',
           name: 'PersonCenter',
-          component: PersonCenter
+          component: PersonCenter,
+          children: [
+            {
+              path: '/PersonalStore/:id',
+              name: 'PersonalStore',
+              component: PersonalStore
+            }
+          ]
         }
       ]
     },
     {
-      path:'/MessageDetails',
-      name:'MessageDetails',
+      path: '/MessageDetails',
+      name: 'MessageDetails',
       component: MessageDetails
     },
   ]

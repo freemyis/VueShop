@@ -14,8 +14,9 @@
       v-for="(phoneImage, index) in images"
       :key="index"
       :thumb="phoneImage"
-      @click="shopDetail(index)"
+      @click-thumb="shopDetail(index)"
     >
+      <!-- @click="shopDetail(index)" -->
       <template #tags>
         <van-tag plain type="danger">京东自营</van-tag>
         <van-tag plain type="danger">双十一特购</van-tag>

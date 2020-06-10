@@ -7,8 +7,12 @@ import 'vant/lib/index.css'
 // import Vuex from 'vuex'
 import store from './store/index'
 import Echarts from 'vue-echarts'
+import Moment from 'moment'
+import axios from 'axios'
 
 Vue.component('v-chart', Echarts)
+
+Vue.prototype.$axios = axios;
 
 // Vue.use(Vuex)
 
@@ -50,6 +54,10 @@ Vue.config.productionTip = false
 //     }
 //   }
 // })
+
+///注册一个全局过滤器来格式化后台传过来的时间，使用管道符
+Vue.filter('TimeFormatter', (time, mode) => Moment(time).format(mode));
+
 
 /* eslint-disable no-new */
 new Vue({
