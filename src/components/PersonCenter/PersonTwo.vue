@@ -2,6 +2,7 @@
   <div>
     <div>{{message}}</div>
     <button @click="trans">trans</button>
+    ==={{names}}===
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
       message: "default value"
     };
   },
+  inject: ["names"],
   methods: {
     testme() {
       console.log("you can see me?");

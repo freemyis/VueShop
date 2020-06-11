@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>There are Third Component you can see it.</p>
+    <slot name="defaultSlot" bra="brabra~~~~~~~"></slot>
   </div>
 </template>
 

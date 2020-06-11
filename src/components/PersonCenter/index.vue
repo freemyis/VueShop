@@ -2,7 +2,13 @@
   <div>
     <div class="topNull"></div>
     <h1>PersonCenter page</h1>
-    <PersonOne :age="age1" locate="qingdao" @emitMess="Messget" @ringmis="getTwoMess" />
+    <!-- 使用匿名插槽的方式传递数据 -->
+    <PersonOne
+      :age="age1"
+      locate="qingdao"
+      @emitMess="Messget"
+      @ringmis="getTwoMess"
+    >This is a no name slot</PersonOne>
     <div>
       <title>Active Route Ts</title>
       <router-link :to="{path: '/PersonalStore/1', query:{name:'newNames'}}">个人简介</router-link>---
@@ -23,6 +29,9 @@ export default {
     return {
       age1: 12
     };
+  },
+  provide: {
+    names: "PROVIDE AND INJECT."
   },
   methods: {
     Messget(val) {
