@@ -5,7 +5,13 @@
     {{name1}}
     <div>single trans</div>
     <PersonTwo :know="rst" v-bind="$attrs" v-on="$listeners" />
-    <PersonThree ref="objectMess" />
+    <PersonThree ref="objectMess">
+      <template #defaultSlot="slotProps">
+        <div>具名插槽{{slotProps.bra}}</div>
+        <div>{{Mess}}</div>
+      </template>
+    </PersonThree>
+    <slot></slot>
   </div>
 </template>
 
