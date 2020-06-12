@@ -40,6 +40,7 @@ export default {
   created() {
     this.name1 = this.locate;
     this.$emit("emitMess", this.Mess);
+    this.$parent.$emit("parmethod", "parmethod");
   },
   mounted() {
     console.log(this.$refs, "get the components Object.");
