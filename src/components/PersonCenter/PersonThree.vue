@@ -24,6 +24,10 @@ export default {
     PersonNull.$on("brother", val => {
       console.log(val, "success get brother Message.");
     });
+
+    this.$parent.$on("heibro", val => {
+      console.log(val, "There are bro.");
+    });
   }
 };
 </script>

@@ -3,6 +3,9 @@
     <div>{{message}}</div>
     <button @click="trans">trans</button>
     ==={{names}}===
+    <button
+      @click="$parent.$emit('heibro', 'Hello Brother man.')"
+    >$parentandbrother</button>
   </div>
 </template>
 

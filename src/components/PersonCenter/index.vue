@@ -16,6 +16,7 @@
       <router-link :to="{path: '/PersonalStore/3'}">个人特色</router-link>
 
       <router-view></router-view>
+      <!-- <button @click="parmethod">parmethod</button> -->
     </div>
   </div>
 </template>
@@ -33,6 +34,9 @@ export default {
   provide: {
     names: "PROVIDE AND INJECT."
   },
+  mounted() {
+    // console.log(this.parmethod);
+  },
   methods: {
     Messget(val) {
       console.log(val);
@@ -40,6 +44,9 @@ export default {
     getTwoMess(val) {
       console.log(val, "The Two Method");
     }
+    // parmethod(val) {
+    //   console.log(val, "$parent and $emit use");
+    // }
   },
   //   watch: {
   //     $route(to, from) {
